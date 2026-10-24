@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build the library
+        uses: leanprover/lean-action@v1.6.2
+
+      - name: Axiom audit
+        run: |
+          lake env lean AxiomAudit.lean > axiom_audit.out
+          cat axiom_audit.out
+          if grep -v "depends on axioms: \[propext, Classical.choice, Quot.sound\]\|depends on axioms: \[propext, Quot.sound\]\|does not depend on any axioms" axiom_audit.out; then
+            echo "unexpected axioms or errors in the audit" >&2
+            exit 1
+          fi
