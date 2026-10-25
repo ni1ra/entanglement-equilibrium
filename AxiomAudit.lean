@@ -139,3 +139,13 @@ open EntEq
 #print axioms NormalCoords.riemLow_linG
 #print axioms NormalCoords.normal_coordinates_general_riem
 #print axioms NormalCoords.xNC_local_diffeo
+#print axioms Curved.raychaudhuri_alg
+#print axioms Curved.raychaudhuri
+#print axioms Curved.raychaudhuri_bifurcation
+#print axioms Curved.horizon_exists
+#print axioms Curved.horizon_focusing
+#print axioms Curved.clausius_to_einstein_geom
+#print axioms Curved.einstein_to_clausius_geom
+#print axioms Curved.ball_iff_null
+#print axioms Curved.flat_sector_necessity
+#print axioms Curved.one_frame_insufficient

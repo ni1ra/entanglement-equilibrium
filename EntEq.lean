@@ -42,3 +42,6 @@ import EntEq.NormalCoords
 import EntEq.NormalCoordsGeneral
 import EntEq.RiemannLinear
 import EntEq.InverseSmooth
+import EntEq.Raychaudhuri
+import EntEq.Horizon
+import EntEq.PremiseStrength
