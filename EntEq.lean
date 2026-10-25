@@ -42,3 +42,4 @@ import EntEq.NormalCoords
 import EntEq.NormalCoordsGeneral
 import EntEq.RiemannLinear
 import EntEq.InverseSmooth
+import EntEq.Carrier

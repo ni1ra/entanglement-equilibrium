@@ -139,3 +139,4 @@ open EntEq
 #print axioms NormalCoords.riemLow_linG
 #print axioms NormalCoords.normal_coordinates_general_riem
 #print axioms NormalCoords.xNC_local_diffeo
+#print axioms EntEq.Carrier.carrier_weight_trace_form
